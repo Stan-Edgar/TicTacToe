@@ -1,10 +1,43 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-div {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black;
+body {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    font-family: Norse;
+    gap: 40px;
+}
+
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);
+}
+
+h1 {
+    font-size: 5rem;
+    color: rgb(196, 170, 0);
+}
+
+#wrapper {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.6rem;
+}
+
+#wrapper > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 3px 16px 5px rgba(0,0,0,0.45);
 }

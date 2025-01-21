@@ -9,13 +9,14 @@ function createPlayer(name, marker) {
 
 }
 
-let john = new createPlayer("John", "X");
-
+let playerOne = new createPlayer("One", "X");
+let playerTwo = new createPlayer("Two", "O")
 
 
 let one = document.querySelector(".one");
 let two = document.querySelector(".two");
 let three = document.querySelector(".three");
+let wrapper = document.querySelector("#wrapper")
 
 // Winning system
 
@@ -74,12 +75,26 @@ three.addEventListener('click', function(){
     console.log(moveList)
 })
 
-let div = document.querySelectorAll("div").forEach(div => div.addEventListener('click', function(e)
+let boxes = wrapper.querySelectorAll('div');
+playerOne.turn = true;
+
+boxes.forEach(box => box.addEventListener('click', function()
 {  
-    alert(counter);
     counter++;
-    e.target.style.background = "black";
-    console.log(e.target.className); 
+
+    // TURN BASE SYSTEM
+
+    if (playerOne.turn) {
+        box.innerHTML  = `${playerOne.marker}`;
+        playerOne.turn = false;
+        playerTwo.turn = true;
+    } else if (playerTwo.turn) {
+        box.innerHTML = `${playerTwo.marker}`;
+        playerTwo.turn = false;
+        playerOne.turn = true;
+    
+    }
+  
 
 }))
 
