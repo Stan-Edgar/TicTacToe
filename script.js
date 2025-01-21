@@ -95,16 +95,9 @@ boxes.forEach(box => box.addEventListener('click', function()
 {  
     counter++;
 
-    if (counter >= 5) {
-
-        if(compareArray(poMoveList, winningOutcomes[0])) {
-
+        if (one.innerHTML === playerOne.marker && two.innerHTML === playerOne.marker && three.innerHTML === playerOne.marker) {
             console.log(`Player one won`)
-
-        } else if(compareArray(ptMoveList, winningOutcomes[0])) {
-            console.log(`Player two won`)
         };
-    }
 
     // TURN BASE SYSTEM
 
