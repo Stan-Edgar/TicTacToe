@@ -52,27 +52,40 @@ const winningOutcomes = [
 
 
 let counter = 0;
-let moveList = [];
+let poMoveList = [];
+let ptMoveList = [];
 
-if (counter === 3) {
-    console.log(compareArray(moveList, winningOutcomes[0]))
-}
 
 // Event Listeners
 
 one.addEventListener('click', function(){
-    moveList.push(1);
-    console.log(moveList)
+
+    if (playerOne.turn) {
+        poMoveList.push(1);
+    } else if (playerTwo.turn) {
+        ptMoveList.push(1);
+    
+    }
 })
 
 two.addEventListener('click', function(){
-    moveList.push(2);
-    console.log(moveList)
+    
+    if (playerOne.turn) {
+        poMoveList.push(2);
+    } else if (playerTwo.turn) {
+        ptMoveList.push(2);
+    
+    }
 })
 
 three.addEventListener('click', function(){
-    moveList.push(3);
-    console.log(moveList)
+    
+    if (playerOne.turn) {
+        poMoveList.push(3);
+    } else if (playerTwo.turn) {
+        ptMoveList.push(3);
+    
+    }
 })
 
 let boxes = wrapper.querySelectorAll('div');
@@ -81,6 +94,17 @@ playerOne.turn = true;
 boxes.forEach(box => box.addEventListener('click', function()
 {  
     counter++;
+
+    if (counter >= 5) {
+
+        if(compareArray(poMoveList, winningOutcomes[0])) {
+
+            console.log(`Player one won`)
+
+        } else if(compareArray(ptMoveList, winningOutcomes[0])) {
+            console.log(`Player two won`)
+        };
+    }
 
     // TURN BASE SYSTEM
 
