@@ -98,84 +98,84 @@ boxes.forEach(box => box.addEventListener('click', function()
     
 
     if (one.innerHTML === playerOne.marker && two.innerHTML === playerOne.marker && three.innerHTML === playerOne.marker) {
-        console.log(`Player one won`);
+        alert(`Player one won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (four.innerHTML === playerOne.marker && five.innerHTML === playerOne.marker && six.innerHTML === playerOne.marker){
-        console.log(`Player one won`);
+        alert(`Player one won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (seven.innerHTML === playerOne.marker && eight.innerHTML === playerOne.marker && nine.innerHTML === playerOne.marker){
-        console.log(`Player one won`);
+        alert(`Player one won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (one.innerHTML === playerOne.marker && four.innerHTML === playerOne.marker && seven.innerHTML === playerOne.marker){
-        console.log(`Player one won`);
+        alert(`Player one won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (two.innerHTML === playerOne.marker && five.innerHTML === playerOne.marker && eight.innerHTML === playerOne.marker){
-        console.log(`Player one won`);
+        alert(`Player one won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (three.innerHTML === playerOne.marker && six.innerHTML === playerOne.marker && nine.innerHTML === playerOne.marker){
-        console.log(`Player one won`);
+        alert(`Player one won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (one.innerHTML === playerOne.marker && five.innerHTML === playerOne.marker && nine.innerHTML === playerOne.marker){
-        console.log(`Player one won`);
+        alert(`Player one won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (three.innerHTML === playerOne.marker && seven.innerHTML === playerOne.marker && five.innerHTML === playerOne.marker){
-        console.log(`Player one won`);
+        alert(`Player one won`);
         setTimeout(() => {
             reset();
             }, 3000);
     }
 
     if (one.innerHTML === playerTwo.marker && two.innerHTML === playerTwo.marker && three.innerHTML === playerTwo.marker) {
-        console.log(`Player two won`);
+        alert(`Player two won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (four.innerHTML === playerTwo.marker && five.innerHTML === playerTwo.marker && six.innerHTML === playerTwo.marker){
-        console.log(`Player two won`);
+        alert(`Player two won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (seven.innerHTML === playerTwo.marker && eight.innerHTML === playerTwo.marker && nine.innerHTML === playerTwo.marker){
-        console.log(`Player two won`);
+        alert(`Player two won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (one.innerHTML === playerTwo.marker && four.innerHTML === playerTwo.marker && seven.innerHTML === playerTwo.marker){
-        console.log(`Player two won`);
+        alert(`Player two won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (two.innerHTML === playerTwo.marker && five.innerHTML === playerTwo.marker && eight.innerHTML === playerTwo.marker){
-        console.log(`Player two won`);
+        alert(`Player two won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (three.innerHTML === playerTwo.marker && six.innerHTML === playerTwo.marker && nine.innerHTML === playerTwo.marker){
-        console.log(`Player two won`);
+        alert(`Player two won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (one.innerHTML === playerTwo.marker && five.innerHTML === playerTwo.marker && nine.innerHTML === playerTwo.marker){
-        console.log(`Player two won`);
+        alert(`Player two won`);
         setTimeout(() => {
             reset();
             }, 3000);
     } else if (three.innerHTML === playerTwo.marker && seven.innerHTML === playerTwo.marker && five.innerHTML === playerTwo.marker){
-        console.log(`Player two won`);
+        alert(`Player two won`);
         setTimeout(() => {
             reset();
             }, 3000);
